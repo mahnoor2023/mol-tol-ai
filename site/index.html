@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c1d28">
+  <meta name="description" content="Mol-Tol AI is a prototype exploring policy-first negotiation infrastructure for software agents.">
+  <title>Mol-Tol AI — Policy-first negotiation infrastructure</title>
+  <link rel="icon" href="assets/mol-tol-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav wrap">
+    <a class="brand" href="#top" aria-label="Mol-Tol home"><span class="mark">M</span><span>MOL-TOL<small>NEGOTIATION INFRASTRUCTURE</small></span></a>
+    <nav aria-label="Main navigation"><a href="#workflow">How it works</a><a href="#developers">For developers</a><a href="#limits">Status</a><a class="nav-cta" href="https://github.com/mahnoor2023/mol-tol-ai">View project</a></nav>
+  </header>
+  <main id="top" class="wrap">
+    <section class="hero">
+      <div><p class="eyebrow">POLICY-FIRST AGENT COMMERCE</p><h1>Let agents negotiate.<br><em>Keep policy in control.</em></h1><p class="lede">Mol-Tol is a software engineering prototype for bounded buyer–seller negotiations, server-validated agreements, and independently recomputable evidence.</p><div class="actions"><a class="button primary" href="https://github.com/mahnoor2023/mol-tol-ai">Explore the source <span aria-hidden="true">→</span></a><a class="button secondary" href="#developers">See the integration shape</a></div><p class="status">Prototype · deterministic workflow verified locally · real model inference not verified</p></div>
+      <div class="diagram" role="img" aria-label="Buyer and seller agents exchange offers through a Mol-Tol policy boundary"><article><small>BUY SIDE</small><strong>Buyer agent</strong><span>Authorized objective</span></article><div class="flow"><b>OFFER</b><span>•••</span><b>COUNTER</b></div><div class="core"><span>M</span><strong>Mol-Tol</strong><small>Policy checks</small></div><article><small>SELL SIDE</small><strong>Seller agent</strong><span>Authorized objective</span></article><p>Private limits remain scoped to their authorized owner.</p></div>
+    </section>
+    <section id="workflow" class="section"><p class="eyebrow">A CLEAR TRUST BOUNDARY</p><h2>From proposal to checkable agreement.</h2><p class="intro">The service owns negotiation state and policy checks. An agent can suggest terms; the API decides whether those terms are allowed.</p><div class="cards"><article><span>01 / PROPOSE</span><h3>Exchange structured terms</h3><p>Represent prices as integer minor units, keep session currency fixed, and bound the number of turns.</p></article><article><span>02 / ENFORCE</span><h3>Apply server-side policy</h3><p>Authorization, private buyer and seller limits, and state transitions stay under API control.</p></article><article><span>03 / VERIFY</span><h3>Inspect agreement evidence</h3><p>Recompute a SHA-256 fingerprint to check content consistency. A hash is not an identity signature.</p></article></div></section>
+    <section id="developers" class="developer"><div><p class="eyebrow">DEVELOPER PROJECT</p><h2>Built around an HTTP API and Python SDK.</h2><p>The local prototype includes a FastAPI service, a dependency-light Python client, a Next.js console, tenant-scoped credentials, USD/PKR accounting, and automated regression tests.</p><p>The SDK source and API contract are included in this repository. This static page does not connect to a hosted API.</p><a class="inline" href="https://github.com/mahnoor2023/mol-tol-ai/tree/main/packages/python-sdk">SDK source location <span aria-hidden="true">→</span></a></div><div class="mini-flow"><p>BUYER PROPOSAL <span>Policy checked</span></p><p>SELLER COUNTEROFFER <span>Decision source labeled</span></p><p>AGREEMENT EVIDENCE <span>Fingerprint verifiable</span></p><small>Illustrative product flow; no customer or market outcomes implied.</small></div></section>
+    <section id="limits" class="limits"><p class="eyebrow">HONEST STATUS</p><h2>What this prototype does—and does not—show.</h2><div class="limit-grid"><p><strong>Implemented:</strong> deterministic negotiation and server validation.</p><p><strong>Implemented:</strong> USD and PKR sessions without currency conversion.</p><p><strong>Pending:</strong> verified real LLM inference and independent security review.</p><p><strong>Unvalidated:</strong> customer demand, commercial outcomes, and production deployment.</p></div></section>
+  </main>
+  <footer class="wrap footer"><a class="brand" href="#top"><span class="mark">M</span><span>MOL-TOL<small>SOFTWARE ENGINEERING PROTOTYPE</small></span></a><p>No customer count, revenue, live AI inference, or production security claim.</p><a href="https://github.com/mahnoor2023/mol-tol-ai">Project repository</a></footer>
+</body>
+</html>
